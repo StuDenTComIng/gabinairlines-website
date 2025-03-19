@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>My Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="IMAGES/GABIN.png" alt=""></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick=" hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="flights.html">FLIGHTS</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick=" showMenu()"></i>
+    </nav>
+    <h1>Contact Us</h1>
+</section>
+<!---Contact---->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2334.434235505855!2d123.82924785190764!3d10.258780176945601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1742295733028!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<section class="contact-us">
+    <div class="row">
+        <div class="con-col">
+            <div>
+                <a href="#"><ion-icon name="logo-home"></ion-icon></a>
+                <span>
+                    <h5>XYZ Road, ABC Building</h5>
+                    <p>Talisay, Cebu City</p>
+                </span>
+            </div>
+            <div>
+                <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                <span>
+                    <h5>vince.gabriel64@gmail.com</h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+            <div>
+                <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                <span>
+                    <h5>+63 123456789</h5>
+                    <p>Monday to Saturday</p>
+                </span>
+            </div>
+        </div>
+        <div class="con-col">
+            <form action="form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Enter Your Name" required>
+                <input type="email" name="email" placeholder="Enter Email Adress" required>
+                <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                <textarea rows="8" name="message" placeholder="message" required></textarea>
+                <button type="submit" class="hero-btn yellow-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+</section>
+
+<!-------Footer--------->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>This section provides an inside look at our airline's mission, values, and commitment to delivering exceptional travel experiences. 
+        <br>Learn more about our dedication to safety, comfort, and customer service, and discover what makes us the airline of choice for travelers around the world.
+    </p>
+    <div class="icon">
+        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+    </div>
+    <p>Made by Vince Paquiabas</p>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+</section>
+
+
+
+<!-------Toggle Menu Ni Gab------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = '0';
+    }
+    function hideMenu(){
+        navLinks.style.right = '-200px';
+    }
+
+</script>
+
+</body>
+</html>

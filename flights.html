@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>My Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="IMAGES/GABIN.png" alt=""></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick=" hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="flights.html">FLIGHTS</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick=" showMenu()"></i>
+    </nav>
+    <h1>Our Flights</h1>
+</section>
+<!-----FLIGHTS----->
+<section class="flights">
+    <h1>Flights We Offer</h1>
+    <p>We offer a wide range of flights to destinations worldwide, catering to both business and leisure travelers. Whether you're looking for direct 
+        <br>routes or connecting flights, our services ensure comfort, reliability, and convenience every step of the way.</p>
+
+    <div class="row">
+        <div class="flight-col">
+            <h3>JAPAN</h3>
+            <p>Experience the unique blend of old-world charm and modern sophistication in Japan. Whether you’re exploring
+                <br> Tokyo’s futuristic skyline, Kyoto’s ancient temples, 
+                <br>or the serene beauty of Mount Fuji, Japan offers a perfect balance of tradition and technology. 
+                <br>Immerse yourself in Japan’s fascinating culture, delicious cuisine, and timeless beauty.</p>
+        </div>
+        <div class="flight-col">
+            <h3>SOUTH KOREA</h3>
+            <p>Step into a vibrant fusion of tradition and innovation in South Korea. From the sleek skyscrapers of Seoul to the
+                <br> historic beauty of Gyeongju’s temples, South Korea offers a world of contrasts. Enjoy cutting-edge technology, 
+                <br>delicious cuisine, and stunning landscapes, all while immersing yourself in the heart of East Asia.</p>
+        </div>
+        <div class="flight-col">
+            <h3>CANADA</h3>
+            <p>Discover the breathtaking beauty of Canada, where nature and adventure await. From the cosmopolitan charm of
+                <br> cities like Toronto and Vancouver to the spectacular wilderness of Banff and Niagara Falls, Canada is a land of 
+                <br>diverse landscapes and cultures. Whether you're looking for outdoor adventures or urban experiences, Canada has something for everyone.</p>
+        </div>
+    </div>
+
+</section>
+<!---SERVICES---->
+<section class="services">
+    <h1>Our Services</h1>
+    <p>Our in-flight services are designed to enhance your travel experience. Enjoy comfortable seating, a wide selection of entertainment, and delicious meals 
+        <br>tailored to your preferences. With Wi-Fi and premium options available, we ensure your journey is as relaxing and enjoyable as possible.</p>
+        <div class="row">
+            <div class="ser-col">
+                <img src="IMAGES/seat.jpg">
+                <h3>Seating Options</h3>
+                <p>Our seating options cater to every traveler’s needs, from spacious economy seats to luxurious business and first-class cabins.
+                    <br> Enjoy extra legroom, comfortable recline features, and personalized service to make your journey as comfortable as possible.</p>
+            </div>
+            <div class="ser-col">
+                <img src="IMAGES/ent.jpg">
+                <h3>Entertainment</h3>
+                <p>Stay entertained with a wide selection of movies, TV shows, music, and games, all available at 
+                    <br>your fingertips throughout the flight. Enjoy a personalized entertainment experience on every journey.</p>
+            </div>
+            <div class="ser-col">
+                <img src="IMAGES/dining.jpg">
+                <h3>Dining</h3>
+                <p>Indulge in a variety of delicious in-flight meals, featuring fresh and flavorful options, with special
+                    <br> dietary choices available to suit your needs. Enjoy a dining experience that makes your journey even more enjoyable.</p>
+            </div>
+        </div>
+
+
+</section>
+<!-------Footer--------->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>This section provides an inside look at our airline's mission, values, and commitment to delivering exceptional travel experiences. 
+        <br>Learn more about our dedication to safety, comfort, and customer service, and discover what makes us the airline of choice for travelers around the world.
+    </p>
+    <div class="icon">
+        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+    </div>
+    <p>Made by Vince Paquiabas</p>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+</section>
+
+
+
+<!-------Toggle Menu Ni Gab------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = '0';
+    }
+    function hideMenu(){
+        navLinks.style.right = '-200px';
+    }
+
+</script>
+
+</body>
+</html>

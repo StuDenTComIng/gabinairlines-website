@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>My Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="IMAGES/GABIN.png" alt=""></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick=" hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="flights.html">FLIGHTS</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick=" showMenu()"></i>
+    </nav>
+    <h1>About Us</h1>
+</section>
+<!---about us content---->
+<section class="about-us">
+
+    <div class="row">
+        <div class="about-col">
+            <h1>We are the world's largest airline</h1>
+            <p>As the world's largest airline, we pride ourselves on an unparalleled global network, connecting passengers to
+                <br> over a thousand destinations across multiple countries. Our extensive fleet, innovative services, and commitment to customer 
+                <br>satisfaction have made us the preferred choice for millions of travelers worldwide. With a focus on reliability, comfort, 
+                <br>and seamless travel, we continue to lead the industry by offering the most comprehensive and convenient flying experience available.
+
+            </p>
+            <a href="" class="hero-btn yellow-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="IMAGES/about.jpg">
+        </div>
+    </div>
+
+</section>
+
+<!-------Footer--------->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>This section provides an inside look at our airline's mission, values, and commitment to delivering exceptional travel experiences. 
+        <br>Learn more about our dedication to safety, comfort, and customer service, and discover what makes us the airline of choice for travelers around the world.
+    </p>
+    <div class="icon">
+        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+    </div>
+    <p>Made by Vince Paquiabas</p>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+</section>
+
+
+
+<!-------Toggle Menu Ni Gab------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = '0';
+    }
+    function hideMenu(){
+        navLinks.style.right = '-200px';
+    }
+
+</script>
+
+</body>
+</html>
